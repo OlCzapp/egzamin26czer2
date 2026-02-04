@@ -1,0 +1,1 @@
+# egzamin26czer2
