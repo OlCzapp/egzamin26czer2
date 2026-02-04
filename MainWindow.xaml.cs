@@ -8,6 +8,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.IO;
+
 
 namespace egzamin26czer2
 {
@@ -56,7 +58,27 @@ namespace egzamin26czer2
 
         private void zapisz_w_txt_Click(object sender, RoutedEventArgs e)
         {
+            string wynik = zaszyfrowany_text.Text;
 
+            if (string.IsNullOrWhiteSpace(wynik))
+            {
+                MessageBox.Show("Brak wyniku do zapisania!");
+                return;
+            }
+
+            string sciezka = "zapisy.txt";
+
+            File.AppendAllText(sciezka, wynik + Environment.NewLine); // zamiennie do tej linijki można użyć  |
+            /*                                                                                                |
+                                                                                                              |
+             using (StreamWriter sw = new StreamWriter(sciezka, true))                                    <---0
+                {
+                    sw.WriteLine(wynik);
+                }
+             
+             */
+
+            MessageBox.Show("Wynik zapisany do pliku!");
         }
     }
 }
