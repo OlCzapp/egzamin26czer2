@@ -23,7 +23,10 @@ namespace egzamin26czer2
 
         private void zaszyfruj_Click(object sender, RoutedEventArgs e)
         {
+            int wartosc_klucza_ = int.Parse(wartosc_klucza.Text);
+            string text_do_szyfru_ = text_do_szyfru.Text;
 
+            MessageBox.Show(text_do_szyfru_+", "+ wartosc_klucza_);
         }
 
         private void zapisz_w_txt_Click(object sender, RoutedEventArgs e)
