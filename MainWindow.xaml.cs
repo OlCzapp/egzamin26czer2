@@ -20,5 +20,15 @@ namespace egzamin26czer2
         {
             InitializeComponent();
         }
+
+        private void zaszyfruj_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void zapisz_w_txt_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
