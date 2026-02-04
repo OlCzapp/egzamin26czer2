@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:egzamin26czer2"
         mc:Ignorable="d"
         Background="CadetBlue"
-        Title="Szyfrowanie, stworzone przez OlCz" Height="200" Width="400">
+        Title="Szyfrowanie, stworzone przez OlCz" Height="450" Width="800">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="5*"/>
@@ -15,26 +15,26 @@
         </Grid.ColumnDefinitions>
 
         <StackPanel Grid.Column="0" Orientation="Vertical">
-            <Label Foreground="AntiqueWhite">Podaj wartość klucza:</Label>
+            <Label FontSize="20" Foreground="AntiqueWhite">Podaj wartość klucza:</Label>
             <TextBox Margin="0,10,0,20" HorizontalAlignment="Center" Width="50"></TextBox>
 
-            <Label Foreground="AntiqueWhite">Podaj tekst:</Label>
-            <TextBox Margin="10" HorizontalAlignment="Center" Width="150" Height="65" TextWrapping="Wrap"></TextBox>
+            <Label FontSize="20" Foreground="AntiqueWhite">Podaj tekst:</Label>
+            <TextBox Margin="10" HorizontalAlignment="Center" Width="300" Height="230" TextWrapping="Wrap"></TextBox>
         </StackPanel>
 
         <StackPanel Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Button Background="LightBlue" FontSize="8" Padding="4">Zaszyfruj</Button>
+            <Button Background="LightBlue" FontSize="10" Padding="4">Zaszyfruj</Button>
         </StackPanel>
 
         <StackPanel Grid.Column="2">
-            <Label Foreground="AntiqueWhite">Tekst zaszyfrowany</Label>
+            <Label FontSize="20" Foreground="AntiqueWhite">Tekst zaszyfrowany</Label>
             <StackPanel HorizontalAlignment="Center">
-                <GroupBox BorderBrush="AntiqueWhite " Width="150" Height="120">
+                <GroupBox BorderBrush="AntiqueWhite " Width="300" Height="280">
                     <StackPanel>
                         <TextBlock Margin="20" Foreground="AliceBlue" Text=""></TextBlock>
                     </StackPanel>
                 </GroupBox>
-                <Button Background="LightBlue" FontSize="10" Margin="10">
+                <Button Background="LightBlue" FontSize="15" Margin="20">
                     Zapisz szyfr w pliku
                 </Button>
             </StackPanel>
